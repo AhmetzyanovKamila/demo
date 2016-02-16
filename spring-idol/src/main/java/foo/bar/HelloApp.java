@@ -3,6 +3,8 @@ package foo.bar;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.ArrayList;
+
 public class HelloApp {
     public static void main(String[] args) {
 
@@ -20,10 +22,15 @@ public class HelloApp {
         // todo создать вторую xml-конфигурацию, в которой конферансье вызывает вашего нового исполнителя
         // todo запустить приложение с новой конфигурацией
 
+        ArrayList <Performer> list =new ArrayList<Performer>();
         ApplicationContext context = new ClassPathXmlApplicationContext("spring-config2.xml");
         Performer performer = (Performer) context.getBean("oleg");
+        list.add(performer);
+        performer = (Performer) context.getBean("vasya");
+        list.add(performer);
         //performer.perform();
         Coferancia pol =new Coferancia();
-        pol.vcall(performer);
+       // pol.vcall(performer);
+        pol.bvocal(list);
     }
 }

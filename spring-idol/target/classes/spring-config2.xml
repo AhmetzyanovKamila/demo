@@ -15,4 +15,9 @@
         <constructor-arg name="poem" ref="poem" />
     </bean>
 
+    <bean id="vasya" class="foo.bar.Juggler">
+        <constructor-arg name="countOfBeanbags" value="15" />
+        <constructor-arg name="poem" ref="poem" />
+    </bean>
+
 </beans>
