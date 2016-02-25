@@ -45,6 +45,39 @@
         </property>
     </bean>
 
+    <bean id="t" class="foo.bar.performers.Group">
+            <list>
+           <property name="name" value="Ранетки">
+               <propety name="song" value="#(song.songs)"></propety>
+           </property>
+    </list>
+    </beans>
+
+<bean id="t" class="foo.bar.performers.Group">
+<list>
+    <property name="name" value="Салют">
+        <propety name="song" value="#(song.songs)"></propety>
+    </property>
+</list>
+</beans>
+
+<bean id="s" class="foo.bar.etc.Song">
+<property name="songs">
+    <list>
+        <bean name="song" value="Дверь"></bean>
+    <bean name="text" text="авдпдарпд"></bean>
+    </list>
+</property>
+</bean>
+
+<bean id="s" class="foo.bar.etc.Song">
+<property name="songs">
+    <bean>
+        <bean name="song" value="Лучи"></bean>
+        <bean name="text" text="аоврдпрвадп"></bean>
+    </list>
+</property>
+</bean>
     <!-- внедрение отображений -->
     <bean id="m" class="foo.bar.performers.OneManBandWithMap">
         <property name="instruments">

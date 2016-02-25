@@ -4,9 +4,7 @@ import foo.bar.instruments.Instrument;
 
 import java.util.Map;
 
-/**
- * Created by aur on 15.02.2016.
- */
+
 public class OneManBandWithMap implements Performer {
 
     private Map<String, Instrument> instruments;

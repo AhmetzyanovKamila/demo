@@ -7,7 +7,7 @@ public class Song implements Composition {
         return lirycs;
     }
 
-    private String lirycs = "some song lyrics";
+    private String lirycs ;
 
     public void setLirycs(String lirycs) {
         this.lirycs = lirycs;
