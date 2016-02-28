@@ -1,20 +1,26 @@
-//package foo.bar;
-//
-//import junit.framework.Assert;
-//import org.junit.Test;
+package foo.bar;
+
+import foo.bar.instruments.Instrument;
+import foo.bar.performers.Bassgo;
+import junit.framework.Assert;
+import org.junit.Before;
+import org.junit.Test;
 //import org.junit.runner.RunWith;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.test.context.ContextConfiguration;
 //import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-//
-//@RunWith(SpringJUnit4ClassRunner.class)
-//@ContextConfiguration("classpath:spring-config.xml")
-//public class SpringAppTests {
-////    @Autowired
-////    private HelloService helloService;
-//
-////    @Test
-////    public void testSayHello() {
-////        Assert.assertEquals("Hello world!", helloService.sayHello());
-////    }
-//}
+
+
+public class SpringAppTests extends Assert{
+
+    @Before
+    public void setLol(Instrument lol){
+
+    }
+    @Test
+    public void testWhat() throws Exception{
+        Bassgo b=new Bassgo();
+
+        assertNotNull("some bass", b.lol);
+    }
+}

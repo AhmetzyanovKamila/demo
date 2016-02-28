@@ -14,6 +14,6 @@ public class Bassgo implements Performer {
     public void perform() {
         lol.play();
     }
-    Instrument lol;
+    public Instrument lol;
 
 }
